@@ -26,6 +26,9 @@ function calculation(){
         if(index>3){
             if(absError()==true){
                 addData();
+                document.getElementById("ans").style.visibility="visible";
+                var node = document.createTextNode(mid(xl,xu));
+                document.getElementById("ans").appendChild(node);
                 break;
             }
         }
